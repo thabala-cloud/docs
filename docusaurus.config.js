@@ -57,7 +57,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Thabala Logo',
-          src: 'img/thabala-blue-long.png',
+          src: 'img/thabala-blue-long.svg',
         },
         items: [
           {

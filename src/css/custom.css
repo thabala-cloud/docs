@@ -1,30 +1,104 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #14C8E3;
+  --ifm-color-primary-dark: #1985a0;
+  --ifm-color-primary-darker: #t;
+  --ifm-color-primary-darkest: #ffffff;
+  --ifm-color-primary-light: #79cade;
+  --ifm-color-primary-lighter: #a5dbe9;
+  --ifm-color-primary-lightest: #d2edf4;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-menu-link-padding-horizontal: 0.75rem;
+  --ifm-menu-link-padding-vertical: 0.75rem;
+  --doc-sidebar-width: 350px !important;
+  --ifm-navbar-height: none;
+  --ifm-font-family-base: Exo, sans-serif;
+
+  --ifm-breadcrumb-border-radius: 0.3rem;
+  --ifm-breadcrumb-item-background-active: var(--ifm-menu-color-background-active);
+  --ifm-menu-color-background-active: #ebf8f9;
+  --ifm-menu-color-background-hover: var(--ifm-menu-color-background-active);
+  --ifm-heading-color: rgb(0, 0, 0, 0.85);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+.menu {
+  padding: 0.5rem !important;
+}
+body {
+  font-family: Verdana !important;
+  font-size: 14px;
+}
+.DocSearch-Button .DocSearch-Button-Key {
+  display: none;
+}
+.github-logo-container {
+  background-image: url('/img/github.png');
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.theme-doc-toc-desktop {
+  position: fixed !important;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar__logo {
+  height: 40px;
+}
+
+.navbar-sidebar__brand {
+  padding-left: 0;
+}
+
+.menu,
+.navbar {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Hacks to disable Swagger UI's "try it out" interactive mode */
+.try-out,
+.auth-wrapper,
+.information-container {
+  display: none !important;
+}
+
+.swagger-ui table td,
+.swagger-ui table th,
+.swagger-ui table tr {
+  border: none;
+}
+
+.markdown h2 {
+  font-weight: 600;
+}
+
+.markdown h2:first-child {
+  margin-top: 0.5em;
+}
+
+@media only screen and (min-width: 800px) {
+  .navbar__logo {
+    height: 50px;
+  }
+
+  .navbar {
+    padding-left: 0;
+  }
+}
+a > span > svg {
+  display: none;
 }

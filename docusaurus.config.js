@@ -9,10 +9,10 @@ const config = {
   title: 'Thabala Documentation',
   tagline: 'Hosted analytical services',
   url: 'https://thabala.com',
-  baseUrl: '/',
+  baseUrl: '/Users/peter.kosztolanyi/repos/thabala-docs/build/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -40,7 +40,7 @@ const config = {
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom_thabala.css'),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -54,10 +54,10 @@ const config = {
         disableSwitch: true,
       },
       navbar: {
-        title: 'Thabala',
+        title: '',
         logo: {
           alt: 'Thabala Logo',
-          src: 'img/logo.svg',
+          src: 'img/thabala-blue-long.png',
         },
         items: [
           {

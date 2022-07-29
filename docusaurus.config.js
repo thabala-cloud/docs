@@ -9,7 +9,7 @@ const config = {
   title: 'Thabala Documentation',
   tagline: 'Hosted analytical services',
   url: 'https://thabala.com',
-  baseUrl: '/Users/peter.kosztolanyi/repos/thabala-docs/build/',
+  baseUrl: '/D:/dev/thabala-docs/build/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
@@ -114,6 +114,21 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+    plugins: [
+      [
+        require.resolve("@cmfcmf/docusaurus-search-local"),
+        {
+          indexDocs: true,
+          indexBlog: false,
+          indexPages: false,
+
+          language: "en",
+          style: undefined,
+          maxSearchResults: 8,
+        },
+      ],
+    ],
 };
 
 module.exports = config;

@@ -21,6 +21,12 @@
   --ifm-menu-color-background-active: #ebf8f9;
   --ifm-menu-color-background-hover: var(--ifm-menu-color-background-active);
   --ifm-heading-color: rgb(0, 0, 0, 0.85);
+
+  --aa-primary-color-rgb: 20, 200, 227 !important;
+  --aa-muted-color-rgb: 20, 200, 227 !important;
+
+  --aa-input-border-color-rgb: 20, 200, 227 !important;
+  --aa-input-border-color-alpha: 1 !important;
 }
 
 .menu {
@@ -32,6 +38,33 @@ body {
 }
 .DocSearch-Button .DocSearch-Button-Key {
   display: none;
+}
+.aa-DetachedSearchButton {
+  border: 1px solid rgb(var(--aa-input-border-color-rgb),var(--aa-input-border-color-alpha)) !important;
+  border-radius: 20px !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.aa-DetachedSearchButtonPlaceholder {
+  padding-right: 1rem;
+}
+.aa-DetachedCancelButton {
+  box-shadow: none !important;
+}
+.aa-DetachedCancelButton:hover {
+  color: rgb(var(--aa-primary-color-rgb)) !important;
+}
+.aa-Form {
+  border: 1px solid rgba(var(--aa-input-border-color-rgb),var(--aa-input-border-color-alpha)) !important;
+  border-radius: 20px !important;
+}
+.aa-Form:focus-within {
+  border: 1px solid rgba(var(--aa-input-border-color-rgb),var(--aa-input-border-color-alpha)) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.aa-ItemLink {
+  text-decoration: none !important;
 }
 .github-logo-container {
   background-image: url('/img/github.png');

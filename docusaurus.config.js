@@ -61,6 +61,8 @@ const config = {
         logo: {
           alt: 'Thabala Logo',
           src: 'img/thabala-blue-long.svg',
+          href: 'https://thabala.com',
+          target: "_self",
         },
         items: [
           {

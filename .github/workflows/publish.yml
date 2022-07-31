@@ -27,3 +27,6 @@ jobs:
       - name: Copy files to the documentation website with the AWS CLI
         run: |
           aws s3 sync build s3://docs.thabala.com
+      - name: Invalidate Cloudfront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id E3F84T0HQNOQPI --paths 

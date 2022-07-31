@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - sync-with-delete
 
 jobs:
   build:
@@ -26,7 +27,7 @@ jobs:
           aws-region: eu-west-1
       - name: Copy files to the documentation website with the AWS CLI
         run: |
-          aws s3 sync build s3://docs.thabala.com
+          aws s3 sync build s3://docs.thabala.com --delete
       - name: Invalidate Cloudfront cache
         run: |
           aws cloudfront create-invalidation --distribution-id E3F84T0HQNOQPI --paths '/*'

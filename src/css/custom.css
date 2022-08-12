@@ -2,31 +2,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
-  --ifm-color-primary: #14C8E3;
-  --ifm-color-primary-dark: #1985a0;
-  --ifm-color-primary-darker: #t;
-  --ifm-color-primary-darkest: #ffffff;
-  --ifm-color-primary-light: #79cade;
-  --ifm-color-primary-lighter: #a5dbe9;
-  --ifm-color-primary-lightest: #d2edf4;
+  /* Thabala colors */
+  --thabala-color-blue: #536bb3;
+  --thabala-color-turquise: #13c8e3;
+  --thabala-color-cta: #1d57cc;
+  --thabala-color-darkblue: #0b2250;
+
+  /* Background color */
+  --ifm-background-color: transparent;
+  --ifm-hover-overlay: #f6f9f9;
+  --background-active: #e4ebec;
+
+  /* Main content font colors*/
+  --ifm-color-content: var(--ifm-color-emphasis-700);
+  --ifm-heading-color: var(--ifm-color-emphasis-800);
+  --ifm-font-color-base: var(--ifm-color-content);
+
+  /* Font */
+  --ifm-font-family-base: Exo, sans-serif;
   --ifm-code-font-size: 95%;
+  --ifm-font-weight-light: 300;
+  --ifm-font-weight-normal: 400;
+  --ifm-font-weight-semibold: 600;
+  --ifm-font-weight-bold: 800;
+
+  /* Primary object colors */
+  --ifm-color-primary: #1d57cc;
+  --ifm-color-primary-dark: #1a4eb8;
+  --ifm-color-primary-darker: #194aad;
+  --ifm-color-primary-darkest: #143d8f;
+  --ifm-color-primary-light: #2160df;
+  --ifm-color-primary-lighter: #2b67e1;
+  --ifm-color-primary-lightest: #4a7de5;
+
+  /* Navbar */
+  --ifm-navbar-height: 800;
+  --ifm-navbar-background-color: var(--thabala-color-darkblue);
+  --ifm-navbar-link-hover-color: var(--ifm-color-gray-300);
+  --navbar-font-weight: var(--ifm-font-weight-normal);
+  --navbar-font-size: 105%;
+
+  /* Sidebar */
+  --ifm-menu-color: var(--ifm-color-emphasis-700);
+  --ifm-menu-color-active: var(--ifm-color-emphasis-700);
+  --ifm-menu-color-background-active: var(--background-active);
+  --ifm-menu-color-background-hover: var(--ifm-hover-overlay);
   --ifm-menu-link-padding-horizontal: 0.75rem;
   --ifm-menu-link-padding-vertical: 0.75rem;
   --doc-sidebar-width: 350px !important;
-  --ifm-navbar-height: none;
-  --ifm-font-family-base: Exo, sans-serif;
+  --menu-font-weight-active: var(--ifm-font-weight-bold);
 
+  /* Breadcrumbs */
+  --ifm-breadcrumb-color-active: var(--ifm-color-emphasis-700);
+  --ifm-breadcrumb-item-background-active: var(--background-active);
   --ifm-breadcrumb-border-radius: 0.3rem;
-  --ifm-breadcrumb-item-background-active: var(--ifm-menu-color-background-active);
-  --ifm-menu-color-background-active: #ebf8f9;
-  --ifm-menu-color-background-hover: var(--ifm-menu-color-background-active);
-  --ifm-heading-color: rgb(0, 0, 0, 0.85);
+  --breadcrumb-font-weight-active: var(--ifm-font-weight-bold);
 
-  --aa-primary-color-rgb: 20, 200, 227 !important;
-  --aa-muted-color-rgb: 20, 200, 227 !important;
+  /* Pagination buttons */
+  --ifm-pagination-border-color: var(--thabala-color-cta);
+  --ifm-pagination-color-active: var(--ifm-color-gray-300);
+  --ifm-pagination-color-background: transparent;
+  --ifm-pagination-color-background-hover: var(--thabala-color-cta);
+  --ifm-pagination-color: var(--thabala-color-cta);
+  --ifm-pagination-color-hover: var(--ifm-color-gray-300);
 
-  --aa-input-border-color-rgb: 20, 200, 227 !important;
+  /* Searchbar colors*/
+  --aa-primary-color-rgb: 29, 87, 204 !important;
+  --aa-muted-color-rgb: 29, 87, 204 !important;
+  --aa-input-border-color-rgb: 29, 87, 204 !important;
   --aa-input-border-color-alpha: 1 !important;
+
+  /* Footer */
+  --ifm-footer-padding-vertical: 20px;
+  --ifm-footer-background-color: var(--thabala-color-darkblue);
+  --ifm-footer-color: var(--ifm-color-gray-300);
 }
 
 .menu {
@@ -94,17 +143,24 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .navbar__logo {
   height: 40px !important;
 }
-
+.navbar__link {
+  font-weight: var(--navbar-font-weight);
+  font-size: var(--navbar-font-size)
+}
 .navbar-sidebar__brand {
   padding-left: 0;
 }
-
 .menu,
 .navbar {
   font-size: 14px;
   font-weight: 400;
 }
-
+.menu__link--active {
+  font-weight: var(--menu-font-weight-active);
+}
+.breadcrumbs__item--active {
+  font-weight: var(--breadcrumb-font-weight-active);
+}
 /* Hacks to disable Swagger UI's "try it out" interactive mode */
 .try-out,
 .auth-wrapper,
@@ -137,4 +193,20 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 a > span > svg {
   display: none;
+}
+
+.pagination-nav__link {
+  border-color: var(--ifm-pagination-border-color);
+  background-color: var(--ifm-pagination-color-background);
+  color: var(--ifm-pagination-color);
+}
+.pagination-nav__sublabel {
+  color: var(--ifm-pagination-color);
+}
+.pagination-nav__link:hover {
+  background-color: var(--ifm-pagination-color-background-hover);
+  color: var(--ifm-pagination-color-hover);
+}
+.pagination-nav__link:hover > .pagination-nav__sublabel {
+  color: var(--ifm-pagination-color-hover);
 }

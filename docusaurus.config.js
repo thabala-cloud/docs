@@ -60,7 +60,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Thabala Logo',
-          src: 'img/thabala-blue-long.svg',
+          src: 'img/thabala-long-turquise.svg',
           href: 'https://thabala.com',
           target: "_self",
         },
@@ -74,7 +74,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [],
         copyright: `@${new Date().getFullYear()} Thabala All Rights Reserved`,
       },

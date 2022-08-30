@@ -1,0 +1,8 @@
+---
+title: Thabala CLI
+hide_title: true
+sidebar_position: 7
+---
+# Thabala Command Line Interface
+
+Work in Progress

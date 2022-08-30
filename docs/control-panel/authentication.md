@@ -3,6 +3,10 @@ title: Authentication
 hide_title: true
 sidebar_position: 1
 ---
-# Architecture
+# Authentication
+
+Work in Progress
+
+# Allowlist
 
 Work in Progress

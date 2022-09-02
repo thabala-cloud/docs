@@ -1,7 +1,7 @@
 ---
 title: Managing Users
 hide_title: true
-sidebar_position: 3
+sidebar_position: 6
 ---
 # Managing Users
 

@@ -5,7 +5,7 @@ sidebar_position: 3
 ---
 # OAuth 2.0 authentication
 
-The Thabala Control Panel and all the supported services running in Thabala can be configured to enable OAuth 2.0 authentication over HTTPS
+The Thabala Admin Console and all the supported services running in Thabala can be configured to enable OAuth 2.0 authentication over HTTPS
 for the Web UI, the API and the Thabala CLI. It uses the [Authorization Code flow](https://www.rfc-editor.org/rfc/rfc6749#section-1.3.1)
 which exchanges an Authorization Code for a token. At a high level, the flow includes the following steps:
 
@@ -18,18 +18,6 @@ which exchanges an Authorization Code for a token. At a high level, the flow inc
 
 The following identity providers are supported:
 
-* [Github](#github-as-oauth2-identity-provider)
-* [Google](#google-as-oauth2-identity-provider)
-* [Okta](#okta-as-oauth2-identity-provider)
-
-### Github as OAuth2 identity provider
-
-WiP
-
-### Google as OAuth2 identity provider
-
-WiP
-
-### Okta as OAuth2 identity provider
-
-WiP
+* [Github](./oauth2-github)
+* [Google](./oauth2-google)
+* [Okta](./oauth2-okta)

@@ -82,6 +82,15 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        config: {}
+      },
     }),
 
     plugins: [
@@ -97,6 +106,7 @@ const config = {
           maxSearchResults: 8,
         },
       ],
+      require.resolve('docusaurus-plugin-image-zoom'),
     ],
 };
 

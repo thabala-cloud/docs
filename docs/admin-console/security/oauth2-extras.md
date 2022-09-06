@@ -1,7 +1,7 @@
 ---
-title: OAuth2.0 extra options
+title: OAuth2 extra options
 hide_title: true
-sidebar_position: 4
+sidebar_position: 7
 ---
 
 # Extra security options for OAuth 2.0

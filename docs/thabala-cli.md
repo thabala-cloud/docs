@@ -1,7 +1,7 @@
 ---
 title: Thabala CLI
 hide_title: true
-sidebar_position: 7
+sidebar_position: 5
 ---
 # Thabala Command Line Interface
 

@@ -214,3 +214,8 @@ a > span > svg {
 .pagination-nav__link:hover > .pagination-nav__sublabel {
   color: var(--ifm-pagination-color-hover);
 }
+
+.th-inline-table > table {
+    width: 100%;
+    display: inline-table;
+}

@@ -6,7 +6,7 @@ sidebar_position: 8
 
 # Roles and Permissions
 
-Thabala offers role-based access control for users. For an easy permissions are groupped into pre-defined
+Thabala offers role-based access control for users. For an easy overview, permissions are groupped into pre-defined
 roles in Thabala:
 
 * **Public**: No permissions
@@ -54,7 +54,7 @@ Service Instances usually have more roles and permissions that is documented sep
 **Service Instance Admins** have the same permissions as **Thabala Admins** but edit privileges are
 restricted to certain Service Instances. This allows to manage specific service instances without
 granting **Admin Role** to users. **Service Instance Admins** can modify only a limited service instances
-and have no edit permissions on other service instances and other Thabala resources.
+and have no edit permissions for other service instances and other Thabala resources.
 
 ### Create Service Instance Admins in the Thabala Admin Console
 

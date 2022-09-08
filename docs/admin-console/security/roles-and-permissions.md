@@ -103,6 +103,10 @@ instance:
     auth:
       authenticator: db
 users:
+- name: alice@example.com
+  admin: false
+  service_roles:
+  - Gamma
 - name: bob@example.com
   admin: false
   service_roles:
@@ -112,10 +116,6 @@ users:
   admin: false
   service_roles:
   - Admin
-- name: alice@example.com
-  admin: false
-  service_roles:
-  - Gamma
 - name: scott@example.com
   admin: true
   service_roles:

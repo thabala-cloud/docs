@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
 //  baseUrl: '/D:/dev/thabala-docs/build/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.png',
 
   // GitHub pages deployment config.

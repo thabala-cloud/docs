@@ -25,8 +25,7 @@ Once the app is created in Github you will receive a **Client ID** and you will 
 
 ## Configure the Thabala Admin Console
 
-In the Thabala UI open the **Authenticator** menu item and fill, select **Okta** as the authenticator and fill
-the form as below:
+c
 
 * **Api Base URL**: `https://api.github.com/`
 * **Authorize URL**: `https://github.com/login/oauth/authorize`

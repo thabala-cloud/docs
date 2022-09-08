@@ -30,7 +30,7 @@ Once the app is created Google Admin Console you will generate a **Client ID** a
 
 ## Configure the Thabala Admin Console
 
-In the Thabala UI open the **Authenticator** menu item and fill, select **Okta** as the authenticator and fill
+In the Thabala Admin Console go to the **Security -> Authenticator** menu item, select **Google** as the authenticator and fill
 the form as below:
 
 * **Api Base URL**: `https://www.googleapis.com/oauth2/v2/`

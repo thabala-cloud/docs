@@ -36,10 +36,12 @@ good practise making sure that a dedicated, super-admin user can always login to
 If the Thabala account is configured to use [OAuth2 over HTTPS](/admin-console/security/oauth2)
 then this password will be ignored.
 
+![Example banner](./assets/managing-users.png)
+
 :::info
 
 To be more familiar with the different authentication types please check the
-[Authentication types](/security/http://localhost:3000/admin-console/security/authentication-types) page.
+[Authentication types](/admin-console/security/authentication-types) page.
 
 :::
 
@@ -50,24 +52,24 @@ Optionally you can define the same thing as YAML file using the `Users` kind and
 ```yaml
 kind: Users
 users:
+- username: alice@example.com
+  first_name: Alice
+  last_name: Example
+  email: alice@example.com
+  roles:
+  - name: Admin
+  db_auth_enabled: true
 - username: bob@example.com
   first_name: Bob
   last_name: Example
   email: bob@example.com
   roles:
-  - name: Admin
-  db_auth_enabled: true
+  - name: Viewer
+  db_auth_enabled: false
 - username: mary@example.com
   first_name: Mary
   last_name: Example
   email: mary@example.com
-  roles:
-  - name: Viewer
-  db_auth_enabled: false
-- username: alice@example.com
-  first_name: Alice
-  last_name: Example
-  email: alice@example.com
   roles:
   - name: Public
   db_auth_enabled: false
@@ -75,7 +77,6 @@ users:
   first_name: Scott
   last_name: Example
   email: scott@example.com
-  roles:
-  - name: Public
+  roles: []
   db_auth_enabled: false
 ```

@@ -14,7 +14,7 @@ You will use the same users across the entire Thabala ecosystem but the permissi
 Thabala Admin Console and for the services. You can read more about it in the
 [Roles and Permsissions](/admin-console/security/roles-and-permissions) page.
 
-## Create Users in the Thabala Admin Console
+## Creating Users in the Thabala Admin Console
 
 In the Thabala Admin Console go to the **Security -> Users** menu item, click the **Create User** button
 and fill the form as below:
@@ -24,15 +24,15 @@ and fill the form as below:
 * **First Name**: First name of the user
 * **Last Name**: Last name of the user
 * **Roles**: One or multiple roles to be granted for the user.
-Roles defined here are valid only to the Thabala Admin Console and don't include permissions to services instances.
+Roles defined here are valid only to the Thabala Admin Console and don't include permissions to service instances.
 Once you have running service instances you'll need to grant service specific roles to the users separately.
-It's a common practise that the same user has no permission to the Thabala Admin Console but has permissions for
+It's common practice that the same user has no permission to the Thabala Admin Console but has permissions for
 specific service instances or vice versa. For further details check the [Roles and Permsissions](/admin-console/security/roles-and-permissions) page.
 * **Enable native authentication with user and password**: Enable this option if you want the user to be able to use
 the native user/password based [Internal Thabala Authenticator](/admin-console/security/internal-thabala-authenticator) even if 
 the Thabala account is configured to use [OAuth2 over HTTPS](/admin-console/security/oauth2). Having one user with this option is a
-good practise making sure that a dedicated, super-admin user can always login to the system.
-* **Password**: Use something strong. It will be used only for the [Internal Thabala Authenticator](/admin-console/security/internal-thabala-authenticator).
+good practice making sure that a dedicated, admin user can always login to the system.
+* **Password**: Use a strong password. It will be used only for the [Internal Thabala Authenticator](/admin-console/security/internal-thabala-authenticator).
 If the Thabala account is configured to use [OAuth2 over HTTPS](/admin-console/security/oauth2)
 then this password will be ignored.
 
@@ -40,7 +40,7 @@ then this password will be ignored.
 
 :::info
 
-To be more familiar with the different authentication types please check the
+To get more familiar with the different authentication types please check the
 [Authentication types](/admin-console/security/authentication-types) page.
 
 :::

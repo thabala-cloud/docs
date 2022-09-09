@@ -61,7 +61,6 @@ and have no edit permissions for other service instances and other Thabala resou
 To add users to the Service Instance and grant **Service Instance Admin** go to the running
 Service Instance Page and click the **Users** button:
 
-
 ![Example banner](./assets/service-instance-users.png)
 
 **Explanation**:

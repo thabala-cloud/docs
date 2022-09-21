@@ -1,7 +1,7 @@
 ---
 title: Creating a Superset instance
 hide_title: true
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Creating a Superset instance
@@ -17,6 +17,10 @@ Superset instance details:
 * **Authenticator**: The authenticator type to authenticate users in the Superset instance. It
 can be the user/password based Local Database Authenticator *(default)* or the more secure and recommended
 [OAuth2.0 Authentication](/admin-console/security/oauth2) using one of the supported Identity Providers.
+
+Once the form is submitted, a new Superset instance with an admin user will start being set up and shortly is
+ready to use. Adding more users to the running Superset instance and granting permissions are controlled via
+Thabala and detailed further in the next sections.
 
 ## Configure OAuth2.0 Authenticators
 

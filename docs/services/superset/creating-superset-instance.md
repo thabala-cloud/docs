@@ -69,12 +69,12 @@ Once it has been downloaded, you will no longer be able to download it again.
 
 The link to the initial secrets is available in the properties tab of the new service instance:
 
-![Create Superset Instance Form](./assets/initial-secrets-link.png)
+![Superset Initial Secrets Link](./assets/initial-secrets-link.png)
 
 Once the secrets displayed you'll no longer be able to download it again. You are responsible to keep
 it in a safe place:
 
-![Create Superset Instance Form](./assets/initial-secrets.png)
+![Superset Initial Secrets](./assets/initial-secrets.png)
 
 :::tip
 
@@ -96,12 +96,12 @@ To create users please check the [Managing Users](/admin-console/security/managi
 To allocate an existing user to a superset instance
 
 
-![Create Superset Instance Form](./assets/manage-users.png)
+![Manager Superset Users](./assets/manage-users.png)
 
 #### Service Roles
 
 Available service roles are the same as provided by the Superset default settings.
-For full descriptions please check the [Superset Roles Documentation](https://superset.apache.org/docs/security/).
+For full descriptions and list of permissions please check the [Superset Roles Documentation](https://superset.apache.org/docs/security/).
 Superset Services Roles that can be given to users:
 
 * **Admin**: All possible rights

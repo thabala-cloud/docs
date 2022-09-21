@@ -13,7 +13,7 @@ This section provides specific information for setting up OAuth 2.0 for Thabala 
 ## Create an Authorized OAuth App in GitHub
 
 In **GitHub Developer Settings**, create an OAuth App following the [Official GitHub documentation](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)
-and fill the form as per below:
+and fill the form as per the below:
 
 * **Application Name**: Anything meaningful, a good name could be `Thabala Admin Console`
 * **Homepage URL**: `https://<thabala-account-domain-name>`. This value is unique for your Thabala account.
@@ -66,7 +66,7 @@ authenticator:
 
 The `client_id` and `client_secret` values are automatically encrypted and identified by the `enc/` prefix.
 Based on your security requirements if you don't like the auto encrypted values in the YAML files then you
-can use secure variables which are replaced to the actual values at runtime. Using this method
+can use secure variables which are replaced with the actual values at runtime. Using this method
 you do not need to keep encrypted secrets in YAML files and in your version control system.
 
 :::

@@ -1,7 +1,6 @@
 ---
 title: Creating an Airflow instance
 hide_title: true
-sidebar_position: 2
 ---
 
 # Creating an Airflow instance

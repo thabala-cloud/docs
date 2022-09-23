@@ -1,5 +1,5 @@
 ---
-title: Metrics
+title: Architecture
 ---
 
 Work in Progress

@@ -1,10 +1,6 @@
 ---
 title: OAuth2 extra options
-hide_title: true
-sidebar_position: 7
 ---
-
-# OAuth2 extra options
 
 Authenticating via [OAuth2 over HTTPS](./oauth2) using the supported
 [OAuth2 Identity Provider](./oauth2#oauth-20-identity-providers) comes with a few extra options that control

@@ -1,9 +1,6 @@
 ---
 title: OAuth2 over HTTPS
-hide_title: true
-sidebar_position: 3
 ---
-# OAuth 2.0 authentication
 
 The Thabala Admin Console and all the supported services running in Thabala can be configured to enable OAuth 2.0 authentication over HTTPS
 for the Web UI, the API and the Thabala CLI. It uses the [Authorization Code flow](https://www.rfc-editor.org/rfc/rfc6749#section-1.3.1)

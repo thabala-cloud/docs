@@ -1,10 +1,6 @@
 ---
 title: Roles and Permissions
-hide_title: true
-sidebar_position: 8
 ---
-
-# Roles and Permissions
 
 Thabala offers role-based access control for users. For an easy overview, permissions are groupped into pre-defined
 roles in Thabala:
@@ -68,7 +64,7 @@ Service Instance Page and click the **Users** button:
 **`scott@example.com`** is **Service Instance Admin** so **can edit the instance properties in Thabala**
 (for example scaling, adding users, start/stop but **only this particular service instance**).
 
-At the same time `scott@example.com` has **Admin** role in the running [Superset](/services/superset/roles-and-permissions)
+At the same time `scott@example.com` has **Admin** role in the running [Superset](/services/superset/creating-instance#service-roles)
 instance so can do further actions inside the running service. The other users have a few other service
 specific roles so can do things inside the running service but they are not **Service Instance Admins** so
 they can't manage the instance itself in Thabala. So they're not allowed to scale, add users, start/stop the
@@ -77,7 +73,7 @@ instance, etc.
 :::info
 
 The **Service Roles** in the example above (`sql_lab`, `Alpha`, `Gamma`, `Alpha`) are specific to the actual
-service, in this example [Superset](/services/superset/roles-and-permissions).
+service, in this example [Superset](/services/superset/creating-instance#service-roles).
 These extra roles are managed by the actual service and not part of the Thabala subsystem.
 
 :::

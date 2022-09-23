@@ -1,8 +1,7 @@
 ---
 title: OAuth2 - Okta IdP
-hide_title: true
-sidebar_position: 6
 ---
+
 # Okta as OAuth2 identity provider
 
 This section provides specific information for setting up OAuth 2.0 for Thabala in Okta. There are two tasks to complete:

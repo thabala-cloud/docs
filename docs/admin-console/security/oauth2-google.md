@@ -1,8 +1,7 @@
 ---
 title: OAuth2 - Google IdP
-hide_title: true
-sidebar_position: 5
 ---
+
 # Google as OAuth2 identity provider
 
 This section provides specific information for setting up OAuth 2.0 for Thabala in GitHub. There are two tasks to complete:

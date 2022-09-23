@@ -1,9 +1,6 @@
 ---
 title: Authentication Types
-hide_title: true
-sidebar_position: 1
 ---
-# Authentication Types
 
 Thabala supports multiple authentication types to ensure all users of the system are authenticated.
 Different authenticators allow user management in one or more systems.

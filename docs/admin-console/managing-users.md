@@ -1,14 +1,11 @@
 ---
 title: Managing Users
-hide_title: true
-sidebar_position: 9
 ---
-# Managing Users
 
 Managing users for all services is centralised in Thabala.
 You need to create users in Thabala and associate them to certain services.
-This allows you to use the same user across the [Thabala Admin Console](/category/thabala-admin-console),
-the [Thabala API](/thabala-api), the [Thabala CLI](/thabala-cli) and all the managed service.
+This allows you to use the same user across the [Thabala Admin Console](/admin-console/introduction),
+the Thabala API, the [Thabala CLI](/thabala-cli) and all the managed service.
 
 You will use the same users across the entire Thabala ecosystem but the permissions are separated for the
 Thabala Admin Console and for the services. You can read more about it in the

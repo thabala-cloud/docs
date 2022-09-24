@@ -47,8 +47,9 @@ const sidebars = {
       type: "category",
       label: "Installation",
       items: [
-        "cli/installation/install-by-pip",
-        "cli/installation/install-from-source",
+        "cli/install/overview",
+        "cli/install/pip",
+        "cli/install/from-source",
       ],
     },
     "cli/configuring-your-profile",

@@ -33,7 +33,7 @@ good practice making sure that a dedicated, admin user can always login to the s
 If the Thabala account is configured to use [OAuth2 over HTTPS](/admin-console/security/oauth2)
 then this password will be ignored.
 
-![Example banner](./assets/managing-users.png)
+![Managing Users](./assets/managing-users.png)
 
 :::info
 

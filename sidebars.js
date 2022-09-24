@@ -42,10 +42,29 @@ const sidebars = {
       "admin-console/metrics",
   ],
   "Thabala CLI": [
+    "cli/overview",
     {
       type: "category",
-      label: "Introduction",
-      items: ["cli/overview"],
+      label: "Installation",
+      items: [
+        "cli/installation/install-by-pip",
+        "cli/installation/install-from-source",
+      ],
+    },
+    "cli/configuring-your-profile",
+    {
+      type: "category",
+      label: "Commands",
+      items: [
+        "cli/commands/apply-infra",
+        "cli/commands/get-health",
+        "cli/commands/get-infra",
+        "cli/commands/get-service-instances",
+        "cli/commands/get-service-instance-users",
+        "cli/commands/get-users",
+        "cli/commands/pause-service-instance",
+        "cli/commands/resume-service-instance",
+      ],
     },
   ],
   "Thabala Services": [

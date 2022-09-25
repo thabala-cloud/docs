@@ -52,7 +52,15 @@ const sidebars = {
         "cli/install/from-source",
       ],
     },
-    "cli/configuring-your-profile",
+    {
+      type: "category",
+      label: "Configuration",
+      items: [
+        "cli/config/overview",
+        "cli/config/named-profiles",
+        "cli/config/authenticators",
+      ],
+    },
     {
       type: "category",
       label: "Commands",

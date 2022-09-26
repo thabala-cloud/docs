@@ -2,13 +2,32 @@
 title: Get Health
 ---
 
-Thabala CLI `get health` command gets information about the generic health of your Thabala account.
+Thabala CLI `get health` command returns information about the generic health of your Thabala account
+and its components.
 
-It requests to collect core components of the Thabala account so using this command you can make
-sure your Thabala account is working correctly.
+**Optional arguments**:
 
-Example:
+* `--profile <profile>`: Use a specific thabala profile
+
+Example output:
 ```shell
 $ thabala get health
-{}
+{
+    "details": {
+        "database": {
+            "status": "ok",
+            "version": "Unknown"
+        },
+        "orchestrator": {
+            "status": "ok",
+            "version": "1.0.0"
+        },
+        "webserver": {
+            "status": "ok",
+            "version": "1.0.0"
+        }
+    },
+    "status": "ok",
+    "version": "1.0.0"
+}
 ```

@@ -37,11 +37,8 @@ $ thabala service-instance resume --service-instance-id i-gzomwk6iagiwe4wluujfha
 }
 ```
 
-:::info
+:::caution
 
-To create a new or to stop/delete an existing service instance you need to `apply` a relevant
-infrastructure YAML.
-
-See further details in [Apply Infrastructure](apply-infra.md) section.
+A service instance can be resumed only if it's in `Paused` state.
 
 :::

@@ -7,7 +7,8 @@ Thabala CLI `get service-instances` command gets the active service instance det
 **Optional arguments**:
 
 * `--service-id <id>`: Return only the instances of a specific service
-* `--service-instance-id <id>`: Return only a specific service instance
+* `--service-instance-id <id>`: Return only a specific service instance using a given id
+* `--service-instance-name <name>`: Return only a specific service instance using a given name
 * `--limit <number>`: Limit the maximum number of items to return
 * `--offset <number>`: Use it with the `limit` argument to specify offset of returned values
 * `--profile <profile>`: Use a specific thabala profile

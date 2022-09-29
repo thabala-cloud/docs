@@ -1,9 +1,10 @@
 ---
-title: Get Infra
+title: Get Infrastructure
 ---
 
-Thabala CLI `get infra` command returns objects in the Thabala at the current state in YAML format.
-This YAML file(s) can be used as the starting point to manage a Thabala account as a code.
+Thabala CLI `get infra` command returns resource objects in the Thabala account at the current
+state in YAML format. This YAML file(s) can be used as the starting point to manage a Thabala
+account as a code.
 
 See further details in the [Infrastructure as Code](/admin-console/iaac) section.
 
@@ -14,12 +15,12 @@ See further details in the [Infrastructure as Code](/admin-console/iaac) section
 
 :::tip
 
-The best practise is to maintain your Thabala account as a code instead of making changes manually using
+The best practise is to maintain your Thabala account as a code instead of making changes manually in
 the admin console web interface. To achieve that you need to keep the infrastructure YAML file(s) in
 a version control system, make changes by pull requests and apply the changes automatically by
-the `thabala apply infra` command.
+the `thabala apply` command.
 
-See further in [Apply Infra Command](apply-infra.md) and [Infrastructure as Code](/admin-console/iaac) sections.
+See further in [Apply Infra Command](infra-apply.md) and [Infrastructure as Code](/admin-console/iaac) sections.
 
 :::
 

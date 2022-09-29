@@ -38,9 +38,9 @@ $ thabala service-instance pause --service-instance-id i-gzomwk6iagiwe4wluujfha
 
 :::info
 
-To create a new or to stop/delete an existing service instance you need to `apply` a relevant
-infrastructure YAML.
+To pause an existing service instance first you need to create one by the `apply` command
+using a relevant infrastructure YAML file.
 
-See further details in [Apply Infrastructure](apply-infra.md) section.
+See further details in [Apply Infrastructure](infra-apply.md) section.
 
 :::

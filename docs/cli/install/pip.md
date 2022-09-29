@@ -42,5 +42,5 @@ $ pip install --upgrade thabala-cli
 To validate if `thabala-cli` is installed correctly:
 ```shell
 $ thabala version
-1.0.0
+1.1.0
 ```

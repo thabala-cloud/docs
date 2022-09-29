@@ -20,7 +20,7 @@ the admin console web interface. To achieve that you need to keep the infrastruc
 a version control system, make changes by pull requests and apply the changes automatically by
 the `thabala apply` command.
 
-See further in [Apply Infra Command](infra-apply.md) and [Infrastructure as Code](/admin-console/iaac) sections.
+See further in [Apply Infra Command](infra-apply.md) and [Infrastructure as Code](/admin-console/iac) sections.
 
 :::
 

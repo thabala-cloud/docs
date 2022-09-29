@@ -2,7 +2,7 @@
 title: Destroy Infrastructure
 ---
 
-Thabala CLI `destroy` command destroys infrastructure YAML files from the Thabala account.
+Thabala CLI `destroy` command destroys the infrastructure item(s) that is described in a YAML file.
 
 Example output:
 

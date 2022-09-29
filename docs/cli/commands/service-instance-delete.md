@@ -2,7 +2,7 @@
 title: Delete Service Instance
 ---
 
-Thabala CLI `service-instance delete` deletes a service instance.
+Thabala CLI `service-instance delete` command deletes a service instance.
 
 **Mandatory arguments**:
 

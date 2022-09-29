@@ -2,7 +2,7 @@
 title: Pause Service Instance
 ---
 
-Thabala CLI `service-instance pause` pausing a running service instance.
+Thabala CLI `service-instance pause` command pausing a running service instance.
 
 **Mandatory arguments**:
 

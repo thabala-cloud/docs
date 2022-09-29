@@ -2,15 +2,21 @@
 title: Apply Infrastructure
 ---
 
-Thabala CLI `apply` command applies infrastructure YAML files to the Thabala account.
-
-
-The input YAML file can contain ore many infrastructure resource kinds.
+Thabala CLI `apply` command applies an infrastructure YAML file to the Thabala account.
+The input YAML file can contain one re many infrastructure resource kinds.
 The infrastructure resource kind is an object type that details specific Thabala objects.
-Known resource kinds:
-* `Authenticator`: Authenticator descriptor
-* `Users`: Thabala account users descriptor with the associated Thabala Built-in Roles
-* `ServiceInstance`: Service instance descriptor with Service Instance Users and the associated Service Instance Roles
+
+Known infrastructure kinds:
+* [Authenticator](/admin-console/iac#the-authenticator-infrastructure-kind): Authenticator descriptor
+* [Users](/admin-console/iac#the-users-infrastructure-kind): Thabala account users descriptor with the associated Thabala Built-in Roles
+* [ServiceInstance](/admin-console/iac#the-serviceinstance-infrastructure-kind): Service instance descriptor with Service Instance Users and the associated Service Instance Roles
+
+:::tip
+
+See, the [Infrastructure as Code](/admin/console/iad) section for more details about how to manage
+your Thabala infrastructure as code.
+
+:::
 
 **Mandatory arguments**:
 

@@ -2,7 +2,7 @@
 title: Resume Service Instance
 ---
 
-Thabala CLI `service-instance resume` resuming a paused service instance.
+Thabala CLI `service-instance resume` command resuming a paused service instance.
 
 **Mandatory arguments**:
 

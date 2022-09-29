@@ -37,8 +37,8 @@ $
 
 :::info
 
-To delete an existing service instance first you need to create one by the `apply` command
-using a relevant infrastructure YAML file.
+To delete an existing service instance first you need to create one using
+the `apply` command giving a relevant infrastructure YAML file.
 
 See further details in [Apply Infrastructure](infra-apply.md) section.
 

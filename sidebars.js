@@ -15,31 +15,30 @@
 const sidebars = {
   "docs": [
     "admin-console/introduction",
-      "admin-console/architecture",
-      {
-        type: "category",
-        label: "Security",
-        items: [
-          "admin-console/security/authentication-types",
-          "admin-console/security/internal-thabala-authenticator",
-          {
-            type: "category",
-            label: "OAuth2",
-            items: [
-              "admin-console/security/oauth2",
-              "admin-console/security/oauth2-github",
-              "admin-console/security/oauth2-google",
-              "admin-console/security/oauth2-okta",
-              "admin-console/security/oauth2-extras",    
-            ]
-          },
-          "admin-console/security/roles-and-permissions",
-        ],
-      },
-      "admin-console/managing-users",
-      "admin-console/spinning-up-services",
-      "admin-console/iac",
-      "admin-console/metrics",
+    {
+      type: "category",
+      label: "Security",
+      items: [
+        "admin-console/security/authentication-types",
+        "admin-console/security/internal-thabala-authenticator",
+        {
+          type: "category",
+          label: "OAuth2",
+          items: [
+            "admin-console/security/oauth2",
+            "admin-console/security/oauth2-github",
+            "admin-console/security/oauth2-google",
+            "admin-console/security/oauth2-okta",
+            "admin-console/security/oauth2-extras",
+          ]
+        },
+        "admin-console/security/roles-and-permissions",
+      ],
+    },
+    "admin-console/managing-users",
+    "admin-console/spinning-up-services",
+    "admin-console/iac",
+    "admin-console/metrics",
   ],
   "Thabala CLI": [
     "cli/overview",

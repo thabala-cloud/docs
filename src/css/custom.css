@@ -19,7 +19,7 @@
   --ifm-font-color-base: var(--ifm-color-content);
 
   /* Font */
-  --ifm-font-family-base: Exo, sans-serif;
+  --ifm-font-family-base: Inter;
   --ifm-code-font-size: 95%;
   --ifm-font-weight-light: 300;
   --ifm-font-weight-normal: 400;
@@ -81,40 +81,50 @@
 .menu {
   padding: 0.5rem !important;
 }
+
 body {
-  font-family: Verdana !important;
+  font-family: Inter !important;
   font-size: 14px;
 }
+
 .DocSearch-Button .DocSearch-Button-Key {
   display: none;
 }
+
 .aa-DetachedSearchButton {
-  border: 1px solid rgb(var(--aa-input-border-color-rgb),var(--aa-input-border-color-alpha)) !important;
+  border: 1px solid rgb(var(--aa-input-border-color-rgb), var(--aa-input-border-color-alpha)) !important;
   border-radius: 20px !important;
   box-shadow: none !important;
   outline: none !important;
 }
+
 .aa-DetachedSearchButtonPlaceholder {
   padding-right: 1rem;
 }
+
 .aa-DetachedCancelButton {
   box-shadow: none !important;
 }
+
 .aa-DetachedCancelButton:hover {
   color: rgb(var(--aa-primary-color-rgb)) !important;
 }
+
 .aa-Form {
-  border: 1px solid rgba(var(--aa-input-border-color-rgb),var(--aa-input-border-color-alpha)) !important;
+  border: 1px solid rgba(var(--aa-input-border-color-rgb), var(--aa-input-border-color-alpha)) !important;
   border-radius: 20px !important;
 }
+
 .aa-Form:focus-within {
-  border: 1px solid rgba(var(--aa-input-border-color-rgb),var(--aa-input-border-color-alpha)) !important;
+  border: 1px solid rgba(var(--aa-input-border-color-rgb), var(--aa-input-border-color-alpha)) !important;
   box-shadow: none !important;
   outline: none !important;
 }
+
 .aa-ItemLink {
   text-decoration: none !important;
 }
+
 .github-logo-container {
   background-image: url('/img/github.png');
   background-size: contain;
@@ -140,27 +150,34 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .navbar__brand {
   padding-left: 1rem;
 }
+
 .navbar__logo {
   height: 40px !important;
 }
+
 .navbar__link {
   font-weight: var(--navbar-font-weight);
   font-size: var(--navbar-font-size)
 }
+
 .navbar-sidebar__brand {
   padding-left: 0;
 }
+
 .menu,
 .navbar {
   font-size: 14px;
   font-weight: 400;
 }
+
 .menu__link--active {
   font-weight: var(--menu-font-weight-active);
 }
+
 .breadcrumbs__item--active {
   font-weight: var(--breadcrumb-font-weight-active);
 }
+
 /* Hacks to disable Swagger UI's "try it out" interactive mode */
 .try-out,
 .auth-wrapper,
@@ -195,7 +212,8 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     padding-left: 0;
   }
 }
-a > span > svg {
+
+a>span>svg {
   display: none;
 }
 
@@ -204,18 +222,21 @@ a > span > svg {
   background-color: var(--ifm-pagination-color-background);
   color: var(--ifm-pagination-color);
 }
+
 .pagination-nav__sublabel {
   color: var(--ifm-pagination-color);
 }
+
 .pagination-nav__link:hover {
   background-color: var(--ifm-pagination-color-background-hover);
   color: var(--ifm-pagination-color-hover);
 }
-.pagination-nav__link:hover > .pagination-nav__sublabel {
+
+.pagination-nav__link:hover>.pagination-nav__sublabel {
   color: var(--ifm-pagination-color-hover);
 }
 
-.th-inline-table > table {
-    width: 100%;
-    display: inline-table;
+.th-inline-table>table {
+  width: 100%;
+  display: inline-table;
 }

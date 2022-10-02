@@ -27,5 +27,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # Draw.io
-.$*.svg.bkp
-.$*.svg.dtmp
+.$*.svg*.bkp
+.$*.svg*.dtmp

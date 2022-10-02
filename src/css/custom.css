@@ -4,9 +4,11 @@
 :root {
   /* Thabala colors */
   --thabala-color-blue: #536bb3;
-  --thabala-color-turquise: #13c8e3;
+  --thabala-color-turquise: #14c8e3;
   --thabala-color-cta: #1d57cc;
   --thabala-color-darkblue: #0b2250;
+  --thabala-color-logo-blue: #385dab;
+  --thabala-color-logo-turquise: #329fb3;
 
   /* Background color */
   --ifm-background-color: transparent;

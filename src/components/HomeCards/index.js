@@ -7,19 +7,19 @@ const cards = [
     title: 'Admin Console',
     icon: 'img/icons/admin-console.svg',
     description: "Thabala Admin Console is the web interface to manage and administrate your services in a web browser.",
-    url: 'admin-console/introduction',
+    url: 'admin-console/overview',
   },
   {
     title: 'Thabala CLI',
     icon: 'img/icons/cli.svg',
     description: "Thabala Command Line Interface is the tool to manage and administrate your service programmatically.",
-    url: 'cli/overview',
+    url: 'cli',
   },
   {
     title: 'Services',
     icon: 'img/icons/services.svg',
     description: "Documentation of the supported fully managed services.",
-    url: 'services/summary',
+    url: 'services',
   }
 ];
 

@@ -15,7 +15,7 @@ function HomepageHeader() {
       <h1 className={styles.heroTitle}>Thabala Documentation</h1>
     </div>
     <div class={styles.bannerButton}>
-      <a href="admin-console/introduction" class="button">Get Started</a>
+      <a href="admin-console" class="button">Get Started</a>
     </div>
   </header>
   )

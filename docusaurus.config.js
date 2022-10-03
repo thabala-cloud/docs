@@ -68,19 +68,19 @@ const config = {
         },
         items: [
           {
-            to: '/admin-console/introduction',
+            to: '/admin-console',
             label: 'Admin Console',
             position: 'left',
             activeBaseRegex: 'admin-console',
           },
           {
-            to: '/cli/overview',
+            to: '/cli',
             label: 'Thabala CLI',
             position: 'left',
             activeBaseRegex: 'cli',
           },
           {
-            to: '/services/summary',
+            to: '/services',
             label: 'Services',
             position: 'left',
             activeBaseRegex: 'services',

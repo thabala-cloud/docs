@@ -14,7 +14,8 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   "docs": [
-    "admin-console/introduction",
+    "admin-console/index",
+    "admin-console/overview",
     {
       type: "category",
       label: "Security",
@@ -41,7 +42,7 @@ const sidebars = {
     "admin-console/metrics",
   ],
   "Thabala CLI": [
-    "cli/overview",
+    "cli/index",
     {
       type: "category",
       label: "Installation",
@@ -78,7 +79,7 @@ const sidebars = {
     },
   ],
   "Thabala Services": [
-    "services/summary",
+    "services/index",
     {
       type: "category",
       label: "Airflow",

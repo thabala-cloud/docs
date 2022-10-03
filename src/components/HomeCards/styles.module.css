@@ -4,7 +4,7 @@
 }
 
 .cardsTitle {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 100;
     text-align: center;
 }
@@ -84,7 +84,6 @@
     /* padding: 8px; */
     position: relative;
     display: block;
-    border-radius: 16px;
     /* border: 1px solid #a8b3cf33; */
     border: 1px;
 }

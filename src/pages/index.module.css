@@ -39,3 +39,28 @@ bannerBackground {
     height: 70px;
     margin: 20px;
 }
+
+.bannerButton {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerButton a {
+    background-color: #1d57cc;
+    color: #fff;
+    /* border: none; */
+    border: 1px solid #1d57cc;
+    border-radius: 0!important;
+    padding: 10px 32px;
+    display: inline-block;
+    min-height: 2.4rem;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 12px 2px;
+    cursor: pointer;
+}
+
+.bannerButton a:hover {
+    background-color: #fff;
+    color: #1d57cc;
+}

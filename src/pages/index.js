@@ -14,6 +14,9 @@ function HomepageHeader() {
       <img className={styles.homeLogo} src="img/thabala-long-blue.svg" />
       <h1 className={styles.heroTitle}>Thabala Documentation</h1>
     </div>
+    <div class={styles.bannerButton}>
+      <a href="admin-console/introduction" class="button">Get Started</a>
+    </div>
   </header>
   )
 }

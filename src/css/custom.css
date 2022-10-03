@@ -244,3 +244,8 @@ a>span>svg {
   width: 100%;
   display: inline-table;
 }
+
+[class*="img_node_modules-"] {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}

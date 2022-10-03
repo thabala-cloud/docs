@@ -41,7 +41,8 @@
   /* Navbar */
   --ifm-navbar-height: 800;
   --ifm-navbar-background-color: var(--thabala-color-darkblue);
-  --ifm-navbar-link-hover-color: var(--ifm-color-gray-300);
+  --ifm-navbar-link-color: var(--ifm-color-gray-300);
+  --ifm-navbar-link-hover-color: var(--thabala-color-turquise);
   --navbar-font-weight: var(--ifm-font-weight-normal);
   --navbar-font-size: 105%;
 

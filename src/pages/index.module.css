@@ -1,0 +1,41 @@
+.heroBanner {
+    padding: 3.5rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+.heroBanner {
+    padding: 1.2rem;
+}
+}
+
+bannerContainer {
+    position: relative;
+    text-align: center;
+}
+
+bannerBackground {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.heroTitle {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeLogo {
+    height: 70px;
+    margin: 20px;
+}

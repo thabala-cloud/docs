@@ -100,7 +100,7 @@ Users of the Thabala CLI can be authenticated by Google OAuth2 by setting the `a
 need to be empty.
 
 `~/.config/thabala/cli.cfg`:
-```yaml
+```ini
 [default]
 account_url = https://th12345.us-east-1.thabala.com
 authenticator = EXTERNALBROWSER
@@ -113,7 +113,7 @@ authentication page in your default browser when running a CLI command.
 For example running the `thabala get service-instances` command you should see the Google authentication page
 in your default browser and the command should act as below:
 
-```commandline
+```shell
 $ thabala get service-instances
 Initiating login request with your identity provider. A browser window should have opened for you to complete the login. If you can't see it, check existing browser windows, or your OS settings. Press CTRL+C to abort and try again...
 {

@@ -3,7 +3,7 @@ title: Infrastructure as Code
 ---
 
 Thabala allows to manage all services, settings and configuration details in [Infrastructure as Code](https://en.wikipedia.org/wiki/Infrastructure_as_code).
-Everything that can be done on the web interface is can be done programmatically by using
+Everything that can be done on the web interface can be done programmatically by using
 the Thabala API via the [Thabala Command Line Interface](/cli/overview).
 
 ### Infrastructure Code format

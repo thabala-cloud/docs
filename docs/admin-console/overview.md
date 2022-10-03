@@ -12,10 +12,11 @@ the required permissions.
 
 :::tip
 
-To manage your account programmatically or as Infrastructure as Code
-you can use the the [Thabala Command Line Interface](/cli).
+To manage your account programmatically and as Infrastructure as Code
+use the [Thabala Command Line Interface](/cli).
 
-Everything that can be done in Web Admin Console in a web browser
-is can be done programmatically by the Thabala CLI.
+Everything that can be done in the Web Admin Console can be done
+programmatically by the Thabala CLI. See the
+[Infrastructure as Code](/admin-console/iac) section.
 
 :::

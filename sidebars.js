@@ -37,9 +37,7 @@ const sidebars = {
       ],
     },
     "admin-console/managing-users",
-    "admin-console/spinning-up-services",
     "admin-console/iac",
-    "admin-console/metrics",
   ],
   "Thabala CLI": [
     "cli/index",

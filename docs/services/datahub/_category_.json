@@ -1,0 +1,8 @@
+{
+  "label": "DataHub",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Managed DataHub service."
+  }
+}

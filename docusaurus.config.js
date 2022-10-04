@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
 //  baseUrl: '/D:/dev/thabala-docs/build/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.png',
 
   // GitHub pages deployment config.
@@ -36,6 +36,8 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
+          showLastUpdateTime: false,
+          sidebarCollapsible: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -57,7 +59,7 @@ const config = {
         disableSwitch: true,
       },
       navbar: {
-        title: '',
+        // hideOnScroll: true,
         logo: {
           alt: 'Thabala Logo',
           src: 'img/thabala-long-turquise.svg',
@@ -66,21 +68,43 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            to: '/admin-console',
+            label: 'Admin Console',
             position: 'left',
-            label: 'Documentation',
+            activeBaseRegex: 'admin-console',
+          },
+          {
+            to: '/cli',
+            label: 'Thabala CLI',
+            position: 'left',
+            activeBaseRegex: 'cli',
+          },
+          {
+            to: '/services',
+            label: 'Services',
+            position: 'left',
+            activeBaseRegex: 'services',
           },
         ],
       },
       footer: {
         style: 'light',
         links: [],
-        copyright: `@${new Date().getFullYear()} Thabala All Rights Reserved`,
+        copyright: `@${new Date().getFullYear()} Thabala, All Rights Reserved`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['ini'],
+      },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        config: {}
       },
     }),
 
@@ -97,6 +121,7 @@ const config = {
           maxSearchResults: 8,
         },
       ],
+      require.resolve('docusaurus-plugin-image-zoom'),
     ],
 };
 

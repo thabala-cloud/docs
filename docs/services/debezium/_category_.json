@@ -1,0 +1,8 @@
+{
+  "label": "Debezium",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Managed Debezium service."
+  }
+}

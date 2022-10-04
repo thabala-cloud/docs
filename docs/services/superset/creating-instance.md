@@ -121,7 +121,7 @@ Thabala settings.
 
 ## Configuring Superset instance in the Thabala CLI
 
-Optionally you can configure all Superset instances as YAML using the `ServiceInstance` kind and can apply it by the [Thabala CLI](/thabala-cli).
+Optionally you can configure all Superset instances as YAML using the `ServiceInstance` kind and can apply it by the [Thabala CLI](/cli).
 
 ```yaml
 kind: ServiceInstance

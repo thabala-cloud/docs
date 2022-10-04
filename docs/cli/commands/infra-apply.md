@@ -13,7 +13,7 @@ Known infrastructure kinds:
 
 :::tip
 
-See, the [Infrastructure as Code](/admin/console/iad) section for more details about how to manage
+See, the [Infrastructure as Code](/admin-console/iac) section for more details about how to manage
 your Thabala infrastructure as code.
 
 :::

@@ -6,7 +6,7 @@ Thabala CLI `get infra` command returns resource objects in the Thabala account 
 state in YAML format. This YAML file(s) can be used as the starting point to manage a Thabala
 account as a code.
 
-See further details in the [Infrastructure as Code](/admin-console/iaac) section.
+See further details in the [Infrastructure as Code](/admin-console/iac) section.
 
 **Optional arguments**:
 

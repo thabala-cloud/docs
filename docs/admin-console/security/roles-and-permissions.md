@@ -80,7 +80,7 @@ These extra roles are managed by the actual service and not part of the Thabala 
 
 ### Create Service Instance Admins by the Thabala CLI
 
-Optionally you can define the same thing as YAML file using the `ServiceInstance` kind and can apply it by the [Thabala CLI](/thabala-cli).
+Optionally you can define the same thing as YAML file using the `ServiceInstance` kind and can apply it by the [Thabala CLI](/cli).
 Users are defined in the `users` section and **Service Instance Admins** are defined by the `admin` flag.
 
 Equivalent to the previous example when we used the Thabala Web Interface, `scott@example.com` is a **Service Instance Admin** (`admin: true`)

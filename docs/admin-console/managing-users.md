@@ -4,8 +4,8 @@ title: Managing Users
 
 Managing users for all services is centralised in Thabala.
 You need to create users in Thabala and associate them to certain services.
-This allows you to use the same user across the [Thabala Admin Console](/admin-console/introduction),
-the Thabala API, the [Thabala CLI](/thabala-cli) and all the managed service.
+This allows you to use the same user across the [Thabala Admin Console](/admin-console/overview),
+the Thabala API, the [Thabala CLI](/cli) and all the managed service.
 
 You will use the same users across the entire Thabala ecosystem but the permissions are separated for the
 Thabala Admin Console and for the services. You can read more about it in the
@@ -44,7 +44,7 @@ To get more familiar with the different authentication types please check the
 
 ## Create Service Instance Admins by the Thabala CLI
 
-Optionally you can define the same thing as YAML file using the `Users` kind and can apply it by the [Thabala CLI](/thabala-cli).
+Optionally you can define the same thing as YAML file using the `Users` kind and can apply it by the [Thabala CLI](/cli).
 
 ```yaml
 kind: Users

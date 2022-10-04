@@ -2,8 +2,9 @@ name: Build Documentation
 
 on:
   push:
-    branches:
+    branches-ignore:
       - main
+  pull_request:
 
 jobs:
   build:

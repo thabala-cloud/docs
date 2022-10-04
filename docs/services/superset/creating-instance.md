@@ -89,10 +89,10 @@ In this case it's safe to ignore the generated password.
 ## Allocate users to Superset instance
 
 Managing users is centralised in Thabala. You need to create users in Thabala and associate them to certain services.
-This allows you to use the same user across the [Thabala Admin Console](/category/thabala-admin-console),
-the [Thabala API](/thabala-api), the [Thabala CLI](/thabala-cli) and other managed service instances.
+This allows you to use the same user across the [Thabala Admin Console](/admin-console),
+the Thabala APIs, the [Thabala CLI](/cli) and other managed service instances.
 
-To create users please check the [Managing Users](/admin-console/security/managing-users) section.
+To create users please check the [Managing Users](/admin-console/managing-users) section.
 To allocate an existing user to a superset instance
 
 
@@ -121,7 +121,7 @@ Thabala settings.
 
 ## Configuring Superset instance in the Thabala CLI
 
-Optionally you can configure all Superset instances as YAML using the `ServiceInstance` kind and can apply it by the [Thabala CLI](/thabala-cli).
+Optionally you can configure all Superset instances as YAML using the `ServiceInstance` kind and can apply it by the [Thabala CLI](/cli).
 
 ```yaml
 kind: ServiceInstance

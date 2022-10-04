@@ -82,7 +82,7 @@ using OAuth2 over HTTPS, you need to enable the
 **native authentication with user and password** option for the required users on the
 [Managing Users](/admin-console/managing-users#creating-users-in-the-thabala-admin-console) page.
 
-If you're managing users as [Infrastructure as Code](/admin-console/iaac) then you need to set
+If you're managing users as [Infrastructure as Code](/admin-console/iac) then you need to set
 `db_auth_enabled: true` for the required users in the `kind: Users` YAML file.
 
 See an example [here](/admin-console/managing-users#create-service-instance-admins-by-the-thabala-cli).

@@ -4,7 +4,7 @@ title: Infrastructure as Code
 
 Thabala allows to manage all services, settings and configuration details in [Infrastructure as Code](https://en.wikipedia.org/wiki/Infrastructure_as_code).
 Everything that can be done on the web interface can be done programmatically by using
-the Thabala API via the [Thabala Command Line Interface](/cli/overview).
+the Thabala API via the [Thabala Command Line Interface](/cli).
 
 ### Infrastructure Code format
 
@@ -26,7 +26,7 @@ Known infrastructure kinds *(see details and examples by clicking on the links)*
 Infrastructure YAML files are typically live in a version control system (for example in [git](https://git-scm.com/)),
 where people who want to make infrastructure changes are sending pull requests to these YAML files. Once the pull request
 got approved by other authorised persons, it got merged and the changes auto applies to the live Thabala account.
-To interact with your Thabala account you need to use the [Thabala Command Line Interface](/cli/overview). (See
+To interact with your Thabala account you need to use the [Thabala Command Line Interface](/cli). (See
 installation methods in the [Thabala CLI Installation](http://localhost:3000/cli/install/overview) section).
 You can use it locally on your laptop (Windows, Mac, Linux) or in CI/CD pipelines for example in GitHub Actions
 to automatically apply the infrastructure changes as early as possible.
@@ -83,7 +83,7 @@ instance:
 ### The `Authenticator` infrastructure kind
 
 The `Authenticator` infrastrucutre kind describe the desired [Authentication Type](/admin-console/security/authentication-types) for
-the [Thabala Admin Console](/admin-console/introduction).
+the [Thabala Admin Console](/admin-console/overview).
 
 :::info
 

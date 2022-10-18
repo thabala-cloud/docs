@@ -34,6 +34,7 @@ const sidebars = {
           ]
         },
         "admin-console/security/roles-and-permissions",
+        "admin-console/security/encrypted-secrets",
       ],
     },
     "admin-console/managing-users",

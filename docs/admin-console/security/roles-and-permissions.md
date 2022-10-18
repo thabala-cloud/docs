@@ -18,23 +18,25 @@ Thabala settings or other service instances.
 
 <div class="th-inline-table">
 
-| Permission                          |  Public  |    Viewer    |    Admin     |
-|:------------------------------------|:--------:|:------------:|:------------:|
-| View Thabala Users                  |          | **&#10004;** | **&#10004;** |
-| View Service Instances              |          | **&#10004;** | **&#10004;** |
-| View Service Instance Users         |          | **&#10004;** | **&#10004;** |
-| View Service Instance Metrics       |          | **&#10004;** | **&#10004;** |
-| View Action Log                     |          | **&#10004;** | **&#10004;** |
-| View Authenticator Settings         |          | **&#10004;** | **&#10004;** |
-| View Service Instance Rates         |          | **&#10004;** | **&#10004;** |
-| View Resource Usage Reports         |          | **&#10004;** | **&#10004;** |
-| View Infrastructure as Code         |          |              | **&#10004;** |
-| Edit Service Instance Users         |          |              | **&#10004;** |
-| Edit Service Instances Properties   |          |              | **&#10004;** |
-| Start/Stop/Pause Service Instances  |          |              | **&#10004;** |
-| Edit Service Instance Users         |          |              | **&#10004;** |
-| Edit Authenticator Settings         |          |              | **&#10004;** |
-| Manage Infrastructure as Code       |          |              | **&#10004;** |
+| Permission                                        |  Public  |    Viewer    |    Admin     |
+|:--------------------------------------------------|:--------:|:------------:|:------------:|
+| View Thabala Users                                |          | **&#10004;** | **&#10004;** |
+| View Service Instances                            |          | **&#10004;** | **&#10004;** |
+| View Service Instance Users                       |          | **&#10004;** | **&#10004;** |
+| View Service Instance Metrics                     |          | **&#10004;** | **&#10004;** |
+| View Action Log                                   |          | **&#10004;** | **&#10004;** |
+| View Authenticator Settings                       |          | **&#10004;** | **&#10004;** |
+| View Service Instance Rates                       |          | **&#10004;** | **&#10004;** |
+| View Resource Usage Reports                       |          | **&#10004;** | **&#10004;** |
+| Use encrypted secrets in infrastucture YAML files |          | **&#10004;** | **&#10004;** |
+| View Infrastructure as Code                       |          |              | **&#10004;** |
+| Edit Service Instance Users                       |          |              | **&#10004;** |
+| Edit Service Instances Properties                 |          |              | **&#10004;** |
+| Start/Stop/Pause Service Instances                |          |              | **&#10004;** |
+| Edit Service Instance Users                       |          |              | **&#10004;** |
+| Edit Authenticator Settings                       |          |              | **&#10004;** |
+| Manage Infrastructure as Code                     |          |              | **&#10004;** |
+| Manage Encrypted Secrets                          |          |              | **&#10004;** |
 
 </div>
 
@@ -57,7 +59,7 @@ and have no edit permissions for other service instances and other Thabala resou
 To add users to the Service Instance and grant **Service Instance Admin** go to the running
 Service Instance Page and click the **Users** button:
 
-![Example banner](./assets/service-instance-users.png)
+![Service Instance Users](./assets/service-instance-users.png)
 
 **Explanation**:
 

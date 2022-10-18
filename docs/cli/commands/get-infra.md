@@ -95,3 +95,10 @@ users:
   - Viewer
   - User
 ```
+
+## Sensitive data in infrastructure code
+
+Known sensitive data in the YAML files are displayed as `<encrypted>` for security reasons.
+Like OAuth `client_id`, `client_secret` or `password`. These values are not returned by the
+`get infra` command and strongly recommended to set these values as
+[Encrypted Secrets](/admin-console/security/encrypted-secrets).

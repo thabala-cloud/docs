@@ -21,6 +21,13 @@ Known infrastructure kinds *(see details and examples by clicking on the links)*
 * [Users](#the-users-infrastructure-kind): Thabala account users descriptor with the associated Thabala Built-in Roles
 * [ServiceInstance](#the-serviceinstance-infrastructure-kind): Service instance descriptor with Service Instance Users and the associated Service Instance Roles
 
+### Exporting the current infrastructure as code
+
+You can always review and export the actual status of the full Thabala infrastructure by using the
+Thabala CLI [`get infra`](/cli/commands/get-infra) command. The output is also a good starting point
+if you want to start managing your account as a code instead of using the [Thabala Admin Console](/admin-console/overview)
+web interface.
+
 ### Using the infrastructure YAML files
 
 Infrastructure YAML files are typically live in a version control system (for example in [git](https://git-scm.com/)),
@@ -218,3 +225,8 @@ users:
   - name: Admin
   - name: Gamma
 ```
+
+### Sensitive data in infrastructure YAML files
+
+Some items in the YAML files are sensitive values, like `client_id`, `client_secret` or `password`.
+It's strongly recommended to set these values as [Encrypted Secrets](/admin-console/security/encrypted-secrets).

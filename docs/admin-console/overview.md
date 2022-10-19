@@ -2,7 +2,7 @@
 title: Thabala Admin Console Overview
 ---
 
-Thabala provides a a web interface to manage your Thabala account securely in a web browser.
+Thabala provides a web interface to manage your Thabala account securely in a web browser.
 
 Using the web interface you can start/pause/delete service instances, can see logs, monitor metrics or scale up/down.
 Using the web interface you also can create users, set permissions, authenticators and can allocate them

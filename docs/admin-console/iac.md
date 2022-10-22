@@ -6,6 +6,18 @@ Thabala allows to manage all services, settings and configuration details in [In
 Everything that can be done on the web interface can be done programmatically by using
 the Thabala API via the [Thabala Command Line Interface](/cli).
 
+### Exporting the current infrastructure as code
+
+You can always review and export the actual status of the full Thabala infrastructure by visiting
+the **Infrastructure as Code** menu point in the [Thabala Admin Console](/admin-console/overview):
+
+![Infrastructure as Code](./assets/infrastructure-as-code.png)
+
+Alternatively you can also export the actual status of the full Thabala infrastructure by using the
+Thabala CLI [`get infra`](/cli/commands/get-infra) command. The output is a good starting point
+if you want to start managing your account as a code instead of using the [Thabala Admin Console](/admin-console/overview)
+web interface.
+
 ### Infrastructure Code format
 
 All infrastructure details are defined as YAML files and all YAML files are structured in the same way.
@@ -20,13 +32,6 @@ Known infrastructure kinds *(see details and examples by clicking on the links)*
 * [Authenticator](#the-authenticator-infrastructure-kind): Authenticator descriptor
 * [Users](#the-users-infrastructure-kind): Thabala account users descriptor with the associated Thabala Built-in Roles
 * [ServiceInstance](#the-serviceinstance-infrastructure-kind): Service instance descriptor with Service Instance Users and the associated Service Instance Roles
-
-### Exporting the current infrastructure as code
-
-You can always review and export the actual status of the full Thabala infrastructure by using the
-Thabala CLI [`get infra`](/cli/commands/get-infra) command. The output is also a good starting point
-if you want to start managing your account as a code instead of using the [Thabala Admin Console](/admin-console/overview)
-web interface.
 
 ### Using the infrastructure YAML files
 

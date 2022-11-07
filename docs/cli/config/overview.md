@@ -8,7 +8,10 @@ used at the end of the installation to [validate the installation](/cli/install/
 
 The automatically generated default config at `~/.config/thabala/cli.cfg`:
 
-```
+```ini
+[core]
+default_timezone = utc
+
 [default]
 account_url = 
 authenticator = 
@@ -32,6 +35,9 @@ accounts or to the same account but as multiple users or multiple authentication
 
 Example `~/.config/thabala/cli.cfg` with two profiles:
 ```ini
+[core]
+default_timezone = utc
+
 ; User/Password based authenticator
 [default]
 account_url = https://thexample001.thabala.com

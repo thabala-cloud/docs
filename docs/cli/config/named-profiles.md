@@ -16,6 +16,9 @@ You can configure additional profiles by adding entries to the `~/.config/thabal
 The following example shows a credentials file with two profiles:
 
 ```ini
+[core]
+default_timezone = utc
+
 ; User/Password based authenticator
 [default]
 account_url = https://thexample001.thabala.com

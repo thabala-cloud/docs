@@ -15,16 +15,16 @@ $ thabala get health
 {
     "details": {
         "database": {
+            "output": "",
             "status": "ok",
-            "version": "Unknown"
         },
         "orchestrator": {
+            "output": "",
             "status": "ok",
-            "version": "1.0.0"
         },
         "webserver": {
+            "output": "",
             "status": "ok",
-            "version": "1.0.0"
         }
     },
     "status": "ok",

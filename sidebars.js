@@ -34,6 +34,7 @@ const sidebars = {
           ]
         },
         "admin-console/security/roles-and-permissions",
+        "admin-console/security/network-policy",
         "admin-console/security/encrypted-secrets",
       ],
     },
@@ -68,6 +69,7 @@ const sidebars = {
         "cli/commands/get-service-instances",
         "cli/commands/get-service-instance-users",
         "cli/commands/get-users",
+        "cli/commands/get-network-policy",
         "cli/commands/get-infra",
         "cli/commands/infra-apply",
         "cli/commands/infra-destroy",

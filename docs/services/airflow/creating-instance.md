@@ -27,7 +27,9 @@ is detected in the git repo.
 can be the user/password based Local Database Authenticator *(default)* or the more secure and recommended
 [OAuth2.0 Authentication](/admin-console/security/oauth2) using one of the supported Identity Providers.
 * **Environment Variables**: To change the default internal behaviour of the airflow instance by adding
-one or more supported Airflow environment variables
+  one or more supported Airflow environment variables
+* **Network Policy**: Allowlist to restrict access to certain IP addresses and IP address ranges. The allowlist items
+support Internet Protocol version 4 (i.e. IPv4) addresses optionally with [CIDR Notations](/admin-console/security/network-policy#cidr-notation).
 
 Once the form is submitted, a new Airflow instance with an admin user will start being set up and shortly is
 ready to use. Adding more users to the running Airflow instance and granting permissions are controlled via
@@ -134,23 +136,48 @@ Thabala settings.
 ## Configuring Airflow instance in the Thabala CLI
 
 Optionally you can configure all Airflow instances as YAML using the `ServiceInstance` kind and can apply it by the [Thabala CLI](/cli).
+An example Airflow instance may look like this in a YAML format:
 
 ```yaml
 kind: ServiceInstance
 instance:
   service_id: airflow
   name: analysts
-  size: xsmall
+  size: small
   extra:
-    description: null
+    description: Airflow instance for Analysts
+    gitSync:
+      repo: https://github.com/thabala-Cloud/airflow-sandbox-public-dags
+      sshKey: null
+      branch: null
+      rev: null
+      subPath: /dags
     auth:
-      authenticator: db
-      oauth2: ~
+      authenticator: google
+    oauth2:
+        api_base_url: https://www.googleapis.com/oauth2/v2/
+        authorize_url: https://accounts.google.com/o/oauth2/auth
+        access_token_url: https://accounts.google.com/o/oauth2/token
+        server_metadata_url: https://accounts.google.com/.well-known/openid-configuration
+        client_id: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+        client_secret: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
       authenticated_users:
         allowlist: []
+    env: {}
+    networkPolicy:
+      allowlist:
+      - ip: 192.168.1.0/24
+      - ip: 192.168.2.100
 users:
-- name: alice@foo.com
+- username: alice@foo.com
   admin: true
   service_roles:
-  - Admin
+  - name: Admin
 ```
+
+:::info
+
+You can find more details about managing your account programmatically in
+the [Infrastructure as Code](/admin-console/iac) section.
+
+:::

@@ -8,6 +8,7 @@ The `thabala-cli` package works on Python versions:
 *  3.8.x and greater
 *  3.9.x and greater
 *  3.10.x and greater
+*  3.11.x and greater
 
 :::info
 
@@ -42,5 +43,5 @@ $ pip install --upgrade thabala-cli
 To validate if `thabala-cli` is installed correctly:
 ```shell
 $ thabala version
-1.1.0
+1.2.0
 ```

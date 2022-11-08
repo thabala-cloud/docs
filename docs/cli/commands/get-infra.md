@@ -24,7 +24,7 @@ See further in [Apply Infra Command](infra-apply.md) and [Infrastructure as Code
 
 :::
 
-Example output of a Thabala account with `Authenticator`, `Users` and `ServiceInstance` object kinds:
+Example output of a Thabala account with `Authenticator`, `Users`, `NetworkPolicy` and `ServiceInstance` object kinds:
 ```yaml
 $ thabala get infra
 ---
@@ -59,31 +59,48 @@ users:
   db_auth_enabled: false
 
 ---
+kind: NetworkPolicy
+rules:
+- ip: 192.168.1.0/24
+  policy_type: allowed
+  description: Allowed local IP range 1
+- ip: 192.168.1.99
+  policy_type: blocked
+  description: Blocked IP in local range 1
+- ip: 192.168.2.0/24
+  policy_type: allowed
+  description: Allowed local IP range 2
+
+---
 kind: ServiceInstance
 instance:
   service_id: airflow
   name: analysts
-  size: xsmall
+  size: small
   extra:
-    description: null
+    description: Airflow instance for Analysts
     gitSync:
-      repo: https://github.com/thabala-cloud/airflow-sandbox-public-dags.git
+      repo: https://github.com/thabala-Cloud/airflow-sandbox-public-dags
       sshKey: null
       branch: null
       rev: null
       subPath: /dags
     auth:
-      authenticator: db
+      authenticator: google
       oauth2:
-        api_base_url: null
-        authorize_url: null
-        access_token_url: null
-        server_metadata_url: null
-        client_id: null
-        client_secret: null
+        api_base_url: https://www.googleapis.com/oauth2/v2/
+        authorize_url: https://accounts.google.com/o/oauth2/auth
+        access_token_url: https://accounts.google.com/o/oauth2/token
+        server_metadata_url: https://accounts.google.com/.well-known/openid-configuration
+        client_id: <encrypted>
+        client_secret: <encrypted>
       authenticated_users:
         allowlist: []
     env: {}
+    networkPolicy:
+      allowlist:
+      - ip: 192.168.1.0/24
+      - ip: 192.168.2.100
 users:
 - name: alice@example.com
   admin: true
@@ -98,7 +115,6 @@ users:
 
 ## Sensitive data in infrastructure code
 
-Known sensitive data in the YAML files are displayed as `<encrypted>` for security reasons.
-Like OAuth `client_id`, `client_secret` or `password`. These values are not returned by the
-`get infra` command and strongly recommended to set these values as
-[Encrypted Secrets](/admin-console/security/encrypted-secrets).
+Known sensitive data in the YAML files such as `client_id` and `client_secret` are displayed
+as `<encrypted>` for security reasons. These values are not returned by the `get infra` command
+and strongly recommended to set these values as [Encrypted Secrets](/admin-console/security/encrypted-secrets).

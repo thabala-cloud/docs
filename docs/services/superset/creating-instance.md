@@ -17,6 +17,8 @@ Superset instance details:
 * **Authenticator**: The authenticator type to authenticate users in the Superset instance. It
 can be the user/password based Local Database Authenticator *(default)* or the more secure and recommended
 [OAuth2.0 Authentication](/admin-console/security/oauth2) using one of the supported Identity Providers.
+* **Network Policy**: Allowlist to restrict access to certain IP addresses and IP address ranges. The allowlist items
+support Internet Protocol version 4 (i.e. IPv4) addresses optionally with [CIDR Notations](/admin-console/security/network-policy#cidr-notation).
 
 Once the form is submitted, a new Superset instance with an admin user will start being set up and shortly is
 ready to use. Adding more users to the running Superset instance and granting permissions are controlled via
@@ -121,7 +123,8 @@ Thabala settings.
 
 ## Configuring Superset instance in the Thabala CLI
 
-Optionally you can configure all Superset instances as YAML using the `ServiceInstance` kind and can apply it by the [Thabala CLI](/cli).
+Optionally you can configure all Airflow instances as YAML using the `ServiceInstance` kind and can apply it by the [Thabala CLI](/cli).
+An example Superset instance may look like this in a YAML format:
 
 ```yaml
 kind: ServiceInstance
@@ -130,15 +133,32 @@ instance:
   name: analysts
   size: xsmall
   extra:
-    description: null
+    description: Superset instance for Analysts
     auth:
-      authenticator: db
-      oauth2: ~
+      authenticator: google
+    oauth2:
+        api_base_url: https://www.googleapis.com/oauth2/v2/
+        authorize_url: https://accounts.google.com/o/oauth2/auth
+        access_token_url: https://accounts.google.com/o/oauth2/token
+        server_metadata_url: https://accounts.google.com/.well-known/openid-configuration
+        client_id: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+        client_secret: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
       authenticated_users:
         allowlist: []
+    networkPolicy:
+      allowlist:
+      - ip: 192.168.1.0/24
+      - ip: 192.168.2.100
 users:
 - name: alice@foo.com
   admin: true
   service_roles:
   - Admin
 ```
+
+:::info
+
+You can find more details about managing your account programmatically in
+the [Infrastructure as Code](/admin-console/iac) section.
+
+:::

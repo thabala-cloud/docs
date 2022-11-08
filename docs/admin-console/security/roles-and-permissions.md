@@ -36,6 +36,7 @@ Thabala settings or other service instances.
 | Edit Service Instance Users                       |          |              | **&#10004;** |
 | Edit Authenticator Settings                       |          |              | **&#10004;** |
 | Manage Infrastructure as Code                     |          |              | **&#10004;** |
+| Manage Network Policies                           |          |              | **&#10004;** |
 | Manage Encrypted Secrets                          |          |              | **&#10004;** |
 
 </div>

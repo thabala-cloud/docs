@@ -3,6 +3,7 @@ title: Destroy Infrastructure
 ---
 
 Thabala CLI `destroy` command destroys the infrastructure item(s) that is described in a YAML file.
+Only [`ServiceInstance`](/admin-console/iac#the-serviceinstance-infrastructure-kind) infrastructure kinds can be destroyed.
 
 Example output:
 

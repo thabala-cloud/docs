@@ -8,8 +8,8 @@ the Thabala API via the [Thabala Command Line Interface](/cli).
 
 ### Exporting the current infrastructure as code
 
-You can always review and export the actual status of the full Thabala infrastructure by visiting
-the **Infrastructure as Code** menu point in the [Thabala Admin Console](/admin-console/overview):
+You can always review and export the actual status of the full Thabala infrastructure to YAML files
+by visiting the **Infrastructure as Code** menu point in the [Thabala Admin Console](/admin-console/overview):
 
 ![Infrastructure as Code](./assets/infrastructure-as-code.png)
 
@@ -30,6 +30,7 @@ kind: <something>
 
 Known infrastructure kinds *(see details and examples by clicking on the links)*:
 * [Authenticator](#the-authenticator-infrastructure-kind): Authenticator descriptor
+* [NetworkPolicy](#the-networkpolicy-infrastructure-kind): Network Policy of the Admin Console
 * [Users](#the-users-infrastructure-kind): Thabala account users descriptor with the associated Thabala Built-in Roles
 * [ServiceInstance](#the-serviceinstance-infrastructure-kind): Service instance descriptor with Service Instance Users and the associated Service Instance Roles
 
@@ -70,6 +71,10 @@ kind: Authenticator
 # <...further-key-values...>
 
 ---
+kind: NetworkPolicy
+# <...further-key-values...>
+
+---
 kind: Users
 # <...further-key-values...>
 
@@ -107,6 +112,7 @@ infrastructure kinds.
 :::
 
 Example `Authenticator` infrastructure kind YAML file with OAuth2 and Google as Identity Provider:
+
 ```yaml
 kind: Authenticator
 authenticator:
@@ -117,17 +123,45 @@ authenticator:
       authorize_url: https://accounts.google.com/o/oauth2/auth
       access_token_url: https://accounts.google.com/o/oauth2/token
       server_metadata_url: https://accounts.google.com/.well-known/openid-configuration
-      client_id: <client_id>
-      client_secret: <client_secret>
+      client_id: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+      client_secret: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
     authenticated_users:
       auth_user_registration: false
       auth_user_registration_role: ''
     browser_mode_redirect_port: 53442
 ```
 
+### The `NetworkPolicy` infrastructure kind
+
+The `NetworkPolicy` infrastrucutre kind defines the [Network Policy](/admin-console/security/network-policy)
+rules for the Admin Console with allowed and blocked ranges of IP addresses. The definitions
+here apply only to the Admin Console and not to the Service Instances.
+
+Example `NetworkPolicy` infrastructure YAML file with a set of allowed and blocked IP addresses and ranges:
+
+```yaml
+### Network Policy that controls from which IP addresses the Thabala Admin Console can be accessed.
+### IMPORTANT: This policy doesn't apply on service instances.
+kind: NetworkPolicy
+rules:
+- ip: 192.168.1.0/24
+  policy_type: allowed
+  description: Allowed local IP range 1
+- ip: 192.168.1.99
+  policy_type: blocked
+  description: Blocked IP in local range 2
+- ip: 192.168.2.0/24
+  policy_type: allowed
+  description: Allowed local IP range 2
+```
+
+
+More details about how to define network policy rules to certain service instances is available
+in the [Creating Network Policy for Service Instances](/admin-console/security/network-policy#creating-network-policy-for-service-instances) section.
+
 ### The `Users` infrastructure kind
 
-The `Authenticator` infrastrucutre kind describes the users in the Thabala account.
+The `Authenticator` infrastructure kind describes the users in the Thabala account.
 This is the YAML representation of [Managing Users](/admin-console/managing-users).
 
 :::info
@@ -208,21 +242,25 @@ Example `ServiceInstance` infrastructure kind YAML file with a [Superset](/servi
 kind: ServiceInstance
 instance:
   service_id: superset
-  name: marketing
+  name: analysts
   size: xsmall
   extra:
-    description: Superset instance for the marketing team
+    description: Superset instance for Analysts
     auth:
-      authenticator: db
+      authenticator: google
       oauth2:
         api_base_url: https://www.googleapis.com/oauth2/v2/
         authorize_url: https://accounts.google.com/o/oauth2/auth
         access_token_url: https://accounts.google.com/o/oauth2/token
         server_metadata_url: https://accounts.google.com/.well-known/openid-configuration
-        client_id: <client_id>
-        client_secret: <client_secret>
+        client_id: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+        client_secret: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
       authenticated_users:
         allowlist: []
+    networkPolicy:
+      allowlist:
+      - ip: 192.168.1.0/24
+      - ip: 192.168.2.100
 users:
 - username: alice@example.com
   admin: true

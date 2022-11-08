@@ -62,16 +62,19 @@ authenticator:
       authorize_url: https://accounts.google.com/o/oauth2/auth
       access_token_url: https://accounts.google.com/o/oauth2/token
       server_metadata_url: https://accounts.google.com/.well-known/openid-configuration
-      client_id: enc/<encrypted-string>
-      client_secret: enc/<encrypted-string>
+      client_id: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+      client_secret: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
 ```
 
 :::info
 
-The `client_id` and `client_secret` values are automatically encrypted and identified by the `enc/` prefix.
-Based on your security requirements if you don't like the auto encrypted values in the YAML files then you
-can use secure variables which are replaced to the actual values at runtime. Using this method
-you do not need to keep encrypted secrets in YAML files and in your version control system.
+The `client_id` and `client_secret` values are automatically encrypted and strongly recommended
+to set these values by [Encrypted Secrets](/admin-console/security/encrypted-secrets).
+Using this method you do not need to keep encrypted secrets in YAML files and in your version control system.
+
+This example is referencing two secrets that created earlier and stored securely in tge Thabala account:
+* `${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}`
+* `${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}`
 
 :::
 

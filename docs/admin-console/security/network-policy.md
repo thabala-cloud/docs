@@ -90,9 +90,9 @@ rules:
 
 ## Creating Network Policy for Service Instances
 
-Network Policy for specific service instances restricts from which computer or device IP address you can connect
-to **certain service instances**. All [Supported services in Thabala](/services) has the option to define
-network policy for each service instance.
+Service Instance Network Policy restricts from which computer or device IP address you can connect
+to **certain service instances**. All [Supported Services in Thabala](/services) have the option to define
+unique network policy for each service instance.
 
 
 ![Service Instance Network Policy](./assets/network-policy-service-instance.png)

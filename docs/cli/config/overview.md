@@ -13,7 +13,8 @@ The automatically generated default config at `~/.config/thabala/cli.cfg`:
 default_timezone = utc
 
 [default]
-account_url = 
+account_url = https://console.thabala.com
+account_id =
 authenticator = 
 username = 
 password = 
@@ -40,7 +41,8 @@ default_timezone = utc
 
 ; User/Password based authenticator
 [default]
-account_url = https://thexample001.thabala.com
+account_url = https://console.thabala.com
+account_id = thexample001
 authenticator = PASSWORD
 username = alice@foo.com
 password = <password>
@@ -48,7 +50,8 @@ password = <password>
 
 ; Passwordless profile with browser based OAuth authenticator
 [profile user1]
-account_url = https://thexample002.thabala.com
+account_url = https://console.thabala.com
+account_id = thexample002
 authenticator = EXTERNALBROWSER
 username = 
 password = 

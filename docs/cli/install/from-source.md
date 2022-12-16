@@ -30,5 +30,5 @@ To install in editable mode, such as while contributing, use `pip install -e .` 
 To validate if `thabala-cli` is installed correctly:
 ```shell
 $ thabala version
-1.2.0
+1.3.0
 ```
